@@ -1,0 +1,68 @@
+.calendarBox {
+    display: flex;
+
+    .calendar {
+        min-width: 380px;
+
+        .calendar-headline {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            &:hover {
+                text-decoration: underline;
+
+            }
+        }
+
+        .calendar-headline-controls {
+            display: flex;
+        }
+
+    }
+
+    .calendarWeek-grid {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .calendar-weeks-grid-cell {
+            margin: 1rem;
+        }
+    }
+
+    .calendar-grid {
+        display: grid;
+        grid-template-columns: repeat(7, minmax(0, 1fr));
+        border-top: 1px solid rgb(190, 190, 190);
+        border-left: 1px solid rgb(190, 190, 190);
+
+        .calendar-grid-cell {
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid rgb(190, 190, 190);
+            border-right: 1px solid rgb(190, 190, 190);
+            cursor: pointer;
+        }
+
+        .calendar-grid-cell:hover {
+            background: #9ba3bf;
+        }
+
+        .calendar-grid-cell-active {
+            background: #9ba3bf;
+        }
+
+
+    }
+    .schedule {
+        margin-left: 10px;
+        .schedule-headline {
+          font-weight: 600;
+          margin-bottom: 30px;
+        }
+      }
+      
+}
